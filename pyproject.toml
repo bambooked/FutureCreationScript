@@ -1,0 +1,33 @@
+[project]
+name = "fc-script"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "gensim>=4.3.3",
+    "mecab>=0.996.11",
+    "numpy>=1.26.4",
+    "pandas>=2.3.1",
+    "scikit-learn>=1.6.1",
+    "sentence-transformers>=5.0.0",
+    "httpx>=0.24.0",
+    "python-dotenv>=1.0.0",
+    "umap-learn>=0.5.9.post2",
+    "transformers>=4.54.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.11.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+    "pytest-cov>=6.2.1",
+    "pytest-mock>=3.14.1",
+]
